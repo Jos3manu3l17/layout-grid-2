@@ -121,11 +121,8 @@ a {
 
 
 .imagenes {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    transition: .3s;
+  column-count: 3; /* efecto masonry */
+  column-gap: 10px;
 }
 
 .imagenes img {
@@ -138,5 +135,6 @@ a {
 .imagenes img:hover {
     box-shadow:0 4px 10px rgb(30, 255, 0);    
     transition: .3s;
+    margin-bottom: 10px;
     transform: scale(1.05);
 } 
